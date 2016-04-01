@@ -9,7 +9,6 @@ public class Root  extends Chord{
     private int[] aMajorChordNotes = {0,2,2,2,0};
     private int[] returnedNotes;
     private int whichString;
-    private int currentRoot;
 
 
     /**
@@ -19,7 +18,7 @@ public class Root  extends Chord{
      * @return returnedNotes.
      */
     public int[] majorPosition(int rootBefore, int stringBefore){
-        currentRoot = rootBefore;
+
         if(rootBefore == -1){
             returnedNotes = new int[6];
             whichString = 6;
@@ -120,8 +119,5 @@ public class Root  extends Chord{
      */
     public int getWhichString(){
         return whichString;
-    }
-    public int getCurrentRoot(){
-        return currentRoot;
     }
 }

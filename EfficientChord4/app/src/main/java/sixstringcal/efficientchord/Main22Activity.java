@@ -99,14 +99,6 @@ public class Main22Activity extends AppCompatActivity implements View.OnClickLis
     }
 
 
-    /**
-     * This returns the current chord number so it can be used outside this application.
-     * @return currentChordNumber.
-     */
-    public int getCurrentChordNumber(){
-        return currentChordNumber;
-    }
-
 
     /**
      * This just makes it so that once the Add Chord button is clicked that the information will be created for the chords.
@@ -164,22 +156,9 @@ public class Main22Activity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    /**
-     * This returns the chord's name as a String value so the user knows what chord is being used.
-     * @return chordName
-     */
-    public String[] getChordName(){
-        return chordName;
-    }
 
 
-    /**
-     * This lets the  program access the chords used in the other classes.
-     * @return chordsUsed.
-     */
-    public int[][] getChordsUsed(){
-        return chordsUsed;
-    }
+
 
     /**
      * This lets the user look at what chords they have created so far and starts the activity to view them.
